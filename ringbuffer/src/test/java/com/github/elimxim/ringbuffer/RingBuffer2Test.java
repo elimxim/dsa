@@ -1,6 +1,6 @@
-package com.github.elimxim;
+package com.github.elimxim.ringbuffer;
 
-import com.github.elimxim.exception.EmptyRingBufferException;
+import com.github.elimxim.ringbuffer.exception.EmptyRingBufferException;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 

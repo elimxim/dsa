@@ -1,15 +1,17 @@
-package com.github.elimxim;
-
-import java.util.stream.IntStream;
+package com.github.elimxim.fib;
 
 class JFibonacci {
+    interface Fib {
+        int get(int number);
+    }
 
     /**
      * Implementation of a loop that starts
      * from the zero Fibonacci number of 0
      */
-    static class LoopV1 {
-        int get(int number) {
+    static class LoopV1 implements Fib {
+        @Override
+        public int get(int number) {
             int curr = 0;
             int next = 1;
 
@@ -29,8 +31,9 @@ class JFibonacci {
      * that prevent calculating of the next Fibonacci number
      * on the last iteration
      */
-    static class LoopV1Improved {
-        int get(int number) {
+    static class LoopV1Improved implements Fib {
+        @Override
+        public int get(int number) {
             int curr = 0;
             int next = 1;
 
@@ -52,8 +55,9 @@ class JFibonacci {
      * Implementation of a loop that starts
      * from the first Fibonacci number of 1
      */
-    static class LoopV2 {
-        int get(int number) {
+    static class LoopV2 implements Fib {
+        @Override
+        public int get(int number) {
             int curr = 0;
             int next = 1;
 
@@ -76,8 +80,9 @@ class JFibonacci {
      * Implementation of a loop that starts
      * from the second Fibonacci number of 1
      */
-    static class LoopV3 {
-        int get(int number) {
+    static class LoopV3 implements Fib {
+        @Override
+        public int get(int number) {
             int prev = 0;
             int curr = 1;
 
@@ -99,8 +104,9 @@ class JFibonacci {
     /**
      * Variation of implementation {@code imp3}
      */
-    static class LoopV3Variation {
-        int get(int number) {
+    static class LoopV3Variation implements Fib {
+        @Override
+        public int get(int number) {
             int prev = 0;
             int curr = 1;
 
@@ -122,8 +128,9 @@ class JFibonacci {
     /**
      * Implementation of a recursion
      */
-    static class RecursionV1 {
-        int get(int number) {
+    static class RecursionV1 implements Fib {
+        @Override
+        public int get(int number) {
             if (number == 0) {
                 return 0;
             } else if (number == 1) {
@@ -132,13 +139,5 @@ class JFibonacci {
 
             return get(number - 1) + get(number - 2);
         }
-    }
-
-    public static void main(String[] args) {
-        var fib = new RecursionV1();
-
-        IntStream.rangeClosed(0, 9).forEach(n ->
-                System.out.println(n + " number of Fibonacci is " + fib.get(n))
-        );
     }
 }

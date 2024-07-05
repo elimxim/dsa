@@ -1,4 +1,4 @@
-package com.github.elimxim;
+package com.github.elimxim.ringbuffer;
 
 import org.junit.jupiter.api.Test;
 

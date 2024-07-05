@@ -1,7 +1,7 @@
-package com.github.elimxim;
+package com.github.elimxim.ringbuffer;
 
-import com.github.elimxim.exception.EmptyRingBufferException;
-import com.github.elimxim.exception.RingBufferOverflowException;
+import com.github.elimxim.ringbuffer.exception.EmptyRingBufferException;
+import com.github.elimxim.ringbuffer.exception.RingBufferOverflowException;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package com.github.elimxim;
+package com.github.elimxim.ringbuffer;
 
 public interface RingBuffer {
     void put(Object o);
