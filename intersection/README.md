@@ -17,5 +17,5 @@ or any other order (means the result is unstable)
 |---------------|--------------------------|------------------|
 | brute force   | O(mn)                    | O(1)             |
 | binary search | O(nlogn + mlogn)         | O(1)             |
-| two pointers  | O(nlogn + mlogm + m + n) | O(1)             |
+| two pointers  | O(nlogn + mlogm + n + m) | O(1)             |
 | hash set      | O(n + m)                 | O(n)             |
