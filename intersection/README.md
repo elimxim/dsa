@@ -13,7 +13,7 @@ or any other order (means the result is unstable)
 ```
 
 ## Approaches
-| idea          | time complexity          | space complexity |
+| approach      | time complexity          | space complexity |
 |---------------|--------------------------|------------------|
 | brute force   | O(mn)                    | O(1)             |
 | binary search | O(nlogn + mlogn)         | O(1)             |
