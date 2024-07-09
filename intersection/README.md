@@ -18,4 +18,4 @@ or any other order (means the result is unstable)
 | brute force   | O(mn)                    | O(1)             |
 | binary search | O(nlogn + mlogn)         | O(1)             |
 | two pointers  | O(nlogn + mlogm + m + n) | O(1)             |
-| hash table    | O(n + m)                 | O(n)             |
+| hash set      | O(n + m)                 | O(n)             |
