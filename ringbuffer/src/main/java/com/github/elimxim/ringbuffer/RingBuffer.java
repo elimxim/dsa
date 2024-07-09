@@ -5,7 +5,5 @@ public interface RingBuffer {
 
     Object get();
 
-    default int size() {
-        throw new UnsupportedOperationException("method size() isn't supported");
-    }
+    int size();
 }

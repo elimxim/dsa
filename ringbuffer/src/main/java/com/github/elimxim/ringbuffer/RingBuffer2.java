@@ -54,4 +54,9 @@ public class RingBuffer2 implements RingBuffer {
         lastOp = 0x00;
         return buffer[read++];
     }
+
+    @Override
+    public int size() {
+        throw new UnsupportedOperationException("method size() isn't supported");
+    }
 }
