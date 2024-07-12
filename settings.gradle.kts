@@ -7,3 +7,4 @@ gradle.rootProject {
 include("fibonacci")
 include("ringbuffer")
 include("intersection")
+include("heap")
