@@ -46,9 +46,9 @@ Operating principle:
 | invoke `get()`             | \[4][ ]\[3]  |
 | invoke `get()`             | \[4][ ][ ]   |
 
-## The task
+## Task description
 
-Implement `RIngBuffer` class to meet requirements using **TDD** method.
+Implement `RingBuffer` class to meet requirements using **TDD** method.
 
 Time: 1h 30m  
 Procedure:

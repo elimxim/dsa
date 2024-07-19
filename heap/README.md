@@ -32,7 +32,7 @@ MaxHeap example:
 4   8 2 
 ```
 
-## Operations:
+## Operations
 
 | operation                | description                     | time complexity |
 |--------------------------|---------------------------------|-----------------|
