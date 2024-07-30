@@ -26,11 +26,6 @@ class JFibonacciTest {
     }
 
     @Test
-    void testLoopV3Variation() {
-        checkFib(new JFibonacci.LoopV3Variation());
-    }
-
-    @Test
     void testRecursionV1() {
         checkFib(new JFibonacci.RecursionV1());
     }

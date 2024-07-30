@@ -5,8 +5,8 @@ interface Fib {
 }
 
 /**
- * Implementation of a loop that starts
- * from the zero Fibonacci number of 0
+ * Implementation of a loop that calculates
+ * the next Fibonacci number
  */
 class LoopV1 : Fib {
     override fun get(number: Int): Int {
@@ -22,31 +22,10 @@ class LoopV1 : Fib {
 }
 
 /**
- * Implementation of a loop that starts
- * from the first Fibonacci number of 1
+ * Implementation of a loop that doesn't
+ * calculate the next Fibonacci number
  */
 class LoopV2 : Fib {
-    override fun get(number: Int): Int {
-        var curr = 0
-        var next = 1
-
-        if (number == 0) {
-            return curr
-        }
-
-        for (i in 0 until number - 1) {
-            next += curr.also { curr = next }
-        }
-
-        return next
-    }
-}
-
-/**
- * Implementation of a loop that starts
- * from the second Fibonacci number of 1
- */
-class LoopV3 : Fib {
     override fun get(number: Int): Int {
         var prev = 0
         var curr = 1
@@ -55,7 +34,7 @@ class LoopV3 : Fib {
             return prev
         }
 
-        for (i in 2..number) {
+        for (i in 1..<number) {
             curr += prev.also { prev = curr }
         }
 

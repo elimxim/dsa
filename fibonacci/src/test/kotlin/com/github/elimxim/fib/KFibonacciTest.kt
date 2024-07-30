@@ -15,11 +15,6 @@ class KFibonacciTest {
     }
 
     @Test
-    fun `LoopV3 test`() {
-        checkFib(LoopV3())
-    }
-
-    @Test
     fun `RecursionV1 test`() {
         checkFib(RecursionV1())
     }

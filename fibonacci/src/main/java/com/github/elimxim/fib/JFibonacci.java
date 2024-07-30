@@ -6,8 +6,8 @@ class JFibonacci {
     }
 
     /**
-     * Implementation of a loop that starts
-     * from the zero Fibonacci number of 0
+     * Implementation of a loop that calculates
+     * the next Fibonacci number
      */
     static class LoopV1 implements Fib {
         @Override
@@ -16,10 +16,9 @@ class JFibonacci {
             int next = 1;
 
             for (int i = 0; i < number; i++) {
-                int prev = curr;
-
+                int tmp = curr;
                 curr = next;
-                next += prev;
+                next += tmp;
             }
 
             return curr;
@@ -38,12 +37,11 @@ class JFibonacci {
             int next = 1;
 
             for (int i = 0; i < number; i++) {
-                int prev = curr;
-
+                int tmp = curr;
                 curr = next;
 
                 if (i < number - 1) {
-                    next += prev;
+                    next += tmp;
                 }
             }
 
@@ -52,33 +50,32 @@ class JFibonacci {
     }
 
     /**
-     * Implementation of a loop that starts
-     * from the first Fibonacci number of 1
+     * Implementation of a loop that doesn't
+     * calculate the next Fibonacci number
      */
     static class LoopV2 implements Fib {
         @Override
         public int get(int number) {
-            int curr = 0;
-            int next = 1;
+            int prev = 0;
+            int curr = 1;
 
             if (number == 0) {
-                return curr;
+                return prev;
             }
 
-            for (int i = 0; i < number - 1; i++) {
-                int prev = curr;
-
-                curr = next;
-                next += prev;
+            for (int i = 1; i < number; i++) {
+                int tmp = prev;
+                prev = curr;
+                curr += tmp;
             }
 
-            return next;
+            return curr;
         }
     }
 
     /**
-     * Implementation of a loop that starts
-     * from the second Fibonacci number of 1
+     * Implementation of a loop that calculates
+     * the current Fibonacci number in a different way
      */
     static class LoopV3 implements Fib {
         @Override
@@ -90,35 +87,10 @@ class JFibonacci {
                 return prev;
             }
 
-            for (int i = 2; i <= number; i++) {
-                int next = prev + curr;
-
+            for (int i = 1; i < number; i++) {
+                int tmp = prev + curr;
                 prev = curr;
-                curr = next;
-            }
-
-            return curr;
-        }
-    }
-
-    /**
-     * Variation of implementation {@code imp3}
-     */
-    static class LoopV3Variation implements Fib {
-        @Override
-        public int get(int number) {
-            int prev = 0;
-            int curr = 1;
-
-            if (number == 0) {
-                return prev;
-            }
-
-            for (int i = 0; i < number - 1; i++) {
-                int next = prev + curr;
-
-                prev = curr;
-                curr = next;
+                curr = tmp;
             }
 
             return curr;
