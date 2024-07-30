@@ -36,7 +36,7 @@ MaxHeap example:
 
 | operation                | description                     | time complexity |
 |--------------------------|---------------------------------|-----------------|
-| `heapify(array) -> heap` | creates a heap of a given array | O(logn)         |
+| `heapify(array) -> heap` | creates a heap of a given array | O((n/2)logn)    |
 | `peek() -> e`            | gets the root element           | O(1)            | 
 | `pull() -> e`            | extracts the root element       | O(logn)         |
 | `put(e)`                 | adds a new element              | O(logn)         |

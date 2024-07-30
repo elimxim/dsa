@@ -15,7 +15,7 @@ or any other order (means the result is unstable)
 ## Approaches
 | approach      | time complexity          | space complexity |
 |---------------|--------------------------|------------------|
-| brute force   | O(mn)                    | O(1)             |
+| brute force   | O(nm)                    | O(1)             |
 | binary search | O(nlogn + mlogn)         | O(1)             |
 | two pointers  | O(nlogn + mlogm + n + m) | O(1)             |
 | hash set      | O(n + m)                 | O(n)             |
