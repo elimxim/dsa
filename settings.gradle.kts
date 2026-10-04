@@ -4,7 +4,9 @@ gradle.rootProject {
     version = "1.0"
 }
 
-include("fibonacci")
-include("ringbuffer")
-include("intersection")
-include("heap")
+include("math:fibonacci")
+
+include("data:heap")
+include("data:ringbuffer")
+
+include("challenges:intersection")

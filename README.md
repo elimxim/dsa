@@ -13,7 +13,10 @@ multi-module Gradle build.
 Each module has its own README with the design notes, variants, and complexity
 analysis for that topic:
 
-- **[Fibonacci sequence](fibonacci/README.md)**
-- **[Ring buffer](ringbuffer/README.md)**
-- **[Intersection of two unsorted arrays](intersection/README.md)**
-- **[Heap](heap/README.md)**
+- Math
+  - [Fibonacci sequence](math/fibonacci/README.md)
+- Data
+  - [Ring buffer](data/ringbuffer/README.md)
+  - [Heap](data/heap/README.md)
+- Challenges
+  - [Intersection of two unsorted arrays](challenges/intersection/README.md)
