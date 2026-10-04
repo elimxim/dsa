@@ -10,3 +10,5 @@ include("data:heap")
 include("data:ringbuffer")
 
 include("challenges:intersection")
+
+include("challenges:adjacent-swaps")
